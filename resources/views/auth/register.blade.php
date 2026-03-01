@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<!-- [Head] start -->
+
+<head>
+    <title>Register | Online Hostel Management System</title>
+    <!-- [Meta] -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta name="description"
+        content="Online Hostel Management System" />
+    <meta name="keywords"
+        content="hostel, mess, management, online hostel system" />
+    <meta name="author" content="M. Abu Bakar, Saba Elahi, Fatima Batool" />
+    <meta name="theme-color" content="#1e293b" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- [Open Graph] -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Register | Online Hostel Management System" />
+    <meta property="og:description"
+        content="Register for your Online Hostel Management System account." />
+    <meta property="og:site_name" content="Online Hostel Management System" />
+
+    <!-- [Twitter/X Card] -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Register | Online Hostel Management System" />
+    <meta name="twitter:description"
+        content="Register for your Online Hostel Management System account." />
+
+    <!-- [Favicon] icons -->
+    <link rel="icon" href="../assets/images/logo.png" type="image/png+svg+xml" />
+    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/images/site.webmanifest" />
+    <!-- [Font] Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <!-- [phosphor Icons] https://phosphoricons.com/ -->
+    <link rel="stylesheet" href="../assets/css/plugins/phosphor-icons.css" />
+    <!-- [Tabler Icons] https://tablericons.com -->
+    <link rel="stylesheet" href="../assets/css/plugins/tabler-icons.min.css" />
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="../assets/css/style.css" id="main-style-link" />
+    <link rel="stylesheet" href="../assets/css/style-preset.css" />
+    <!-- [Vite Development Scripts] -->
+    <!-- Development script removed for production -->
+
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-direction="ltr" data-pc-theme="light">
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+
+    <div class="auth-main">
+        <div class="auth-wrapper v4">
+            <div class="auth-form">
+                <div class="card my-2">
+                    <div class="row g-0">
+                        <div
+                            class="bg-brand-color-1 col-md-4 col-lg-6 d-none d-md-flex d-lg-flex align-items-center justify-content-center">
+                            <img src="../assets/images/authentication/user.png" alt="lock images" class="img-fluid" />
+                        </div>
+                        <div class="col-md-8 col-lg-6">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <a href="#"><img src="../assets/images/logo-dark.svg" alt="img" /></a>
+                                </div>
+                                <h4 class="text-center f-w-500 mt-4 mb-3">Sign up</h4>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="First Name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Last Name" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email Address" />
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" class="form-control" placeholder="Password" />
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" class="form-control" placeholder="Confirm Password" />
+                                </div>
+                                <div class="d-flex mt-1 justify-content-between">
+                                    <div class="form-check">
+                                        <input class="form-check-input input-primary" type="checkbox" id="customCheckc1"
+                                            checked="" />
+                                        <label class="form-check-label text-muted" for="customCheckc1">I agree to all
+                                            the Terms & Condition</label>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <button type="button" class="btn btn-primary shadow px-sm-4">Sign up</button>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end mt-4">
+                                    <h6 class="f-w-500 mb-0">Already have an Account?</h6>
+                                    <a href="{{ route('auth.login') }}" class="link-primary">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- [ Main Content ] end -->
+    <!-- Required JS -->
+    <script src="../assets/js/plugins/popper.min.js"></script>
+    <script src="../assets/js/plugins/simplebar.min.js"></script>
+    <script src="../assets/js/plugins/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/i18next.min.js"></script>
+    <script src="../assets/js/plugins/i18nextHttpBackend.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/multi-lang.js"></script>
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043"
+        integrity="sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg=="
+        data-cf-beacon='{"version":"2024.11.0","token":"a6117f2172474edeb039d2a90d541d53","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+<!-- [Body] end -->
+
+</html>
