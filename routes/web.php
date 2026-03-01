@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get("/", function (){
+    return view("dashboard");
+});
+
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
     Route::view('/dashboard', 'admin.dashboard.index');
 });
