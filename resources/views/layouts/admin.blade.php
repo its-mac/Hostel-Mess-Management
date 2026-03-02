@@ -1,5 +1,9 @@
 @extends('layouts.dashboard')
 
+@section('sidebar')
+    @include('partials.sidebar-admin')
+@endsection
+
 @section('content')
-    <h1>Admin Dashboard</h1>
+    @yield('content')
 @endsection

@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get("/", function (){
-    return view("dashboard");
+    return view("student.dashboard.index");
 });
 
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {

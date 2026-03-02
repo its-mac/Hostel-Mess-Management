@@ -1,3 +1,9 @@
-<div>
-    <!-- It always seems impossible until it is done. - Nelson Mandela -->
-</div>
+@extends('layouts.dashboard')
+
+@section('sidebar')
+    @include('partials.sidebar-student')
+@endsection
+
+@section('content')
+    @yield('content')
+@endsection
