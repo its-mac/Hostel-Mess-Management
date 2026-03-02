@@ -1,3 +1,5 @@
-<div>
-    <!-- Knowing is not enough; we must apply. Being willing is not enough; we must do. - Leonardo da Vinci -->
-</div>
+@extends('layouts.dashboard')
+
+@section('content')
+    <h1>Admin Dashboard</h1>
+@endsection
