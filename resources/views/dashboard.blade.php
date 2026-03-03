@@ -43,10 +43,10 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
     <!-- [Tabler Icons] https://tablericons.com -->
-    <link rel="stylesheet" href="{{asset('assets/css/plugins/tabler-icons.min.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/tabler-icons.min.css') }}" />
     <!-- [Template CSS Files] -->
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}" id="main-style-link" />
-    <link rel="stylesheet" href="{{asset('assets/css/style-preset.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" id="main-style-link" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style-preset.css') }}" />
     <!-- [Vite Development Scripts] -->
     <!-- Development script removed for production -->
 
@@ -207,9 +207,11 @@
                                     <span class="pc-arrow"><i class="ph ph-caret-right"></i></span>
                                 </a>
                                 <ul class="pc-submenu">
-                                    <li class="pc-item"><a class="pc-link" href="../admins/course-setting-payment.html"
+                                    <li class="pc-item"><a class="pc-link"
+                                            href="../admins/course-setting-payment.html"
                                             data-i18n="Payment">Payment</a></li>
-                                    <li class="pc-item"><a class="pc-link" href="../admins/course-setting-pricing.html"
+                                    <li class="pc-item"><a class="pc-link"
+                                            href="../admins/course-setting-pricing.html"
                                             data-i18n="Pricing">Pricing</a></li>
                                     <li class="pc-item"><a class="pc-link"
                                             href="../admins/course-setting-notifications.html"
@@ -254,11 +256,13 @@
                                     <span class="pc-arrow"><i class="ph ph-caret-right"></i></span>
                                 </a>
                                 <ul class="pc-submenu">
-                                    <li class="pc-item"><a class="pc-link" href="../admins/helpdesk-create-ticket.html"
-                                            data-i18n="Create">Create</a></li>
+                                    <li class="pc-item"><a class="pc-link"
+                                            href="../admins/helpdesk-create-ticket.html" data-i18n="Create">Create</a>
+                                    </li>
                                     <li class="pc-item"><a class="pc-link" href="../admins/helpdesk-ticket.html"
                                             data-i18n="List">List</a></li>
-                                    <li class="pc-item"><a class="pc-link" href="../admins/helpdesk-ticket-details.html"
+                                    <li class="pc-item"><a class="pc-link"
+                                            href="../admins/helpdesk-ticket-details.html"
                                             data-i18n="Details">Details</a></li>
                                 </ul>
                             </li>
@@ -339,8 +343,9 @@
                         </ul>
                     </li>
                     <li class="pc-item pc-hasmenu">
-                        <a href="#!" class="pc-link"><span class="pc-micon"><i class="ph ph-briefcase"></i></span><span
-                                class="pc-mtext" data-i18n="Advanced">Advance</span>
+                        <a href="#!" class="pc-link"><span class="pc-micon"><i
+                                    class="ph ph-briefcase"></i></span><span class="pc-mtext"
+                                data-i18n="Advanced">Advance</span>
                             <span class="pc-arrow"><i class="ph ph-caret-right"></i></span>
                             <span class="pc-badge"
                                 style="background: #198754; width: auto; min-width: 20px; padding: 2px 6px; border-radius: 10px; font-size: 9px; font-weight: 600;">New</span>
@@ -471,8 +476,8 @@
                             <span class="pc-micon">
                                 <i class="ph ph-pen-nib"></i>
                             </span>
-                            <span class="pc-mtext" data-i18n="Text Editor">Text Editors</span><span class="pc-arrow"><i
-                                    class="ph ph-caret-right"></i></span></a>
+                            <span class="pc-mtext" data-i18n="Text Editor">Text Editors</span><span
+                                class="pc-arrow"><i class="ph ph-caret-right"></i></span></a>
                         <ul class="pc-submenu">
                             <li class="pc-item"><a class="pc-link" href="../forms/form2_tinymce.html"
                                     data-i18n="Tinymce">Tinymce</a></li>
@@ -503,8 +508,8 @@
                             <span class="pc-micon">
                                 <i class="ph ph-windows-logo"></i>
                             </span>
-                            <span class="pc-mtext" data-i18n="Form Layouts">Form Layouts</span><span class="pc-arrow"><i
-                                    class="ph ph-caret-right"></i></span>
+                            <span class="pc-mtext" data-i18n="Form Layouts">Form Layouts</span><span
+                                class="pc-arrow"><i class="ph ph-caret-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
                             <li class="pc-item"><a class="pc-link" href="../forms/form2_lay-default.html"
@@ -523,8 +528,8 @@
                             <span class="pc-micon">
                                 <i class="ph ph-cloud-arrow-up"></i>
                             </span>
-                            <span class="pc-mtext" data-i18n="File Upload">File upload</span><span class="pc-arrow"><i
-                                    class="ph ph-caret-right"></i></span>
+                            <span class="pc-mtext" data-i18n="File Upload">File upload</span><span
+                                class="pc-arrow"><i class="ph ph-caret-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
                             <li class="pc-item"><a class="pc-link" href="../forms/file-upload.html"
@@ -620,7 +625,8 @@
                                     data-i18n="Advance initialization">Advance initialization</a></li>
                             <li class="pc-item"><a class="pc-link" href="../table/dt_styling.html"
                                     data-i18n="Styling">Styling</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_api.html" data-i18n="API">API</a>
+                            <li class="pc-item"><a class="pc-link" href="../table/dt_api.html"
+                                    data-i18n="API">API</a>
                             </li>
                             <li class="pc-item"><a class="pc-link" href="../table/dt_plugin.html"
                                     data-i18n="Plug-in">Plug-in</a></li>
@@ -813,16 +819,16 @@
                                     <span class="pc-arrow"><i class="ph ph-caret-right"></i></span>
                                 </a>
                                 <ul class="pc-submenu">
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/login-v1.html"
-                                            data-i18n="Login v1">Login v1</a></li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/login-v2.html"
-                                            data-i18n="Login v2">Login v2</a></li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/login-v3.html"
-                                            data-i18n="Login v3">Login v3</a></li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/login-v4.html"
-                                            data-i18n="Login v4">Login v4</a></li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/login-v5.html"
-                                            data-i18n="Login v5">Login v5</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank"
+                                            href="../pages/login-v1.html" data-i18n="Login v1">Login v1</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank"
+                                            href="../pages/login-v2.html" data-i18n="Login v2">Login v2</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank"
+                                            href="../pages/login-v3.html" data-i18n="Login v3">Login v3</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank"
+                                            href="../pages/login-v4.html" data-i18n="Login v4">Login v4</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank"
+                                            href="../pages/login-v5.html" data-i18n="Login v5">Login v5</a></li>
                                 </ul>
                             </li>
                             <li class="pc-item pc-hasmenu">
@@ -855,19 +861,24 @@
                                 </a>
                                 <ul class="pc-submenu">
                                     <li class="pc-item"><a class="pc-link" target="_blank"
-                                            href="../pages/reset-password-v1.html" data-i18n="Reset Password v1">Reset
+                                            href="../pages/reset-password-v1.html"
+                                            data-i18n="Reset Password v1">Reset
                                             password v1</a></li>
                                     <li class="pc-item"><a class="pc-link" target="_blank"
-                                            href="../pages/reset-password-v2.html" data-i18n="Reset Password v2">Reset
+                                            href="../pages/reset-password-v2.html"
+                                            data-i18n="Reset Password v2">Reset
                                             password v2</a></li>
                                     <li class="pc-item"><a class="pc-link" target="_blank"
-                                            href="../pages/reset-password-v3.html" data-i18n="Reset Password v3">Reset
+                                            href="../pages/reset-password-v3.html"
+                                            data-i18n="Reset Password v3">Reset
                                             password v3</a></li>
                                     <li class="pc-item"><a class="pc-link" target="_blank"
-                                            href="../pages/reset-password-v4.html" data-i18n="Reset Password v4">Reset
+                                            href="../pages/reset-password-v4.html"
+                                            data-i18n="Reset Password v4">Reset
                                             password v4</a></li>
                                     <li class="pc-item"><a class="pc-link" target="_blank"
-                                            href="../pages/reset-password-v5.html" data-i18n="Reset Password v5">Reset
+                                            href="../pages/reset-password-v5.html"
+                                            data-i18n="Reset Password v5">Reset
                                             password v5</a></li>
                                 </ul>
                             </li>
@@ -900,15 +911,15 @@
                             <span class="pc-micon">
                                 <i class="ph ph-wrench"></i>
                             </span>
-                            <span class="pc-mtext" data-i18n="Maintenance">Maintenance</span><span class="pc-arrow"><i
-                                    class="ph ph-caret-right"></i></span></a>
+                            <span class="pc-mtext" data-i18n="Maintenance">Maintenance</span><span
+                                class="pc-arrow"><i class="ph ph-caret-right"></i></span></a>
                         <ul class="pc-submenu">
                             <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/error.html"
                                     data-i18n="Error">Error</a></li>
-                            <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/coming-soon.html"
-                                    data-i18n="Coming-Soon">Coming Soon</a></li>
-                            <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/offline-ui.html"
-                                    data-i18n="Offline Ui">Offline Ui</a></li>
+                            <li class="pc-item"><a class="pc-link" target="_blank"
+                                    href="../pages/coming-soon.html" data-i18n="Coming-Soon">Coming Soon</a></li>
+                            <li class="pc-item"><a class="pc-link" target="_blank"
+                                    href="../pages/offline-ui.html" data-i18n="Offline Ui">Offline Ui</a></li>
                         </ul>
                     </li>
                     <li class="pc-item">
@@ -922,19 +933,23 @@
                         <i class="ph ph-tree-structure"></i>
                     </li>
                     <li class="pc-item pc-hasmenu">
-                        <a href="#!" class="pc-link"><span class="pc-micon"> <i class="ph ph-tree-structure"></i>
+                        <a href="#!" class="pc-link"><span class="pc-micon"> <i
+                                    class="ph ph-tree-structure"></i>
                             </span><span class="pc-mtext" data-i18n="Menu levels">Menu levels</span><span
                                 class="pc-arrow"><i class="ph ph-caret-right"></i></span></a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Level 2.1">Level 2.1</a></li>
+                            <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Level 2.1">Level
+                                    2.1</a></li>
                             <li class="pc-item pc-hasmenu">
                                 <a href="#!" class="pc-link">
                                     <span data-i18n="Level 2.2">Level 2.2</span>
                                     <span class="pc-arrow"><i class="ph ph-caret-right"></i></span></a>
                                 <ul class="pc-submenu">
-                                    <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Level 3.1">Level 3.1</a>
+                                    <li class="pc-item"><a class="pc-link" href="#!"
+                                            data-i18n="Level 3.1">Level 3.1</a>
                                     </li>
-                                    <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Level 3.2">Level 3.2</a>
+                                    <li class="pc-item"><a class="pc-link" href="#!"
+                                            data-i18n="Level 3.2">Level 3.2</a>
                                     </li>
                                     <li class="pc-item pc-hasmenu">
                                         <a href="#!" class="pc-link">
@@ -942,9 +957,11 @@
                                             <span class="pc-arrow"><i class="ph ph-caret-right"></i></span>
                                         </a>
                                         <ul class="pc-submenu">
-                                            <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Level 4.1">Level
+                                            <li class="pc-item"><a class="pc-link" href="#!"
+                                                    data-i18n="Level 4.1">Level
                                                     4.1</a></li>
-                                            <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Level 4.2">Level
+                                            <li class="pc-item"><a class="pc-link" href="#!"
+                                                    data-i18n="Level 4.2">Level
                                                     4.2</a></li>
                                         </ul>
                                     </li>
@@ -955,9 +972,11 @@
                                     <span data-i18n="Level 2.3">Level 2.3</span>
                                     <span class="pc-arrow"><i class="ph ph-caret-right"></i></span></a>
                                 <ul class="pc-submenu">
-                                    <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Level 3.1">Level 3.1</a>
+                                    <li class="pc-item"><a class="pc-link" href="#!"
+                                            data-i18n="Level 3.1">Level 3.1</a>
                                     </li>
-                                    <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Level 3.2">Level 3.2</a>
+                                    <li class="pc-item"><a class="pc-link" href="#!"
+                                            data-i18n="Level 3.2">Level 3.2</a>
                                     </li>
                                     <li class="pc-item pc-hasmenu">
                                         <a href="#!" class="pc-link">
@@ -965,9 +984,11 @@
                                             <span class="pc-arrow"><i class="ph ph-caret-right"></i></span>
                                         </a>
                                         <ul class="pc-submenu">
-                                            <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Level 4.1">Level
+                                            <li class="pc-item"><a class="pc-link" href="#!"
+                                                    data-i18n="Level 4.1">Level
                                                     4.1</a></li>
-                                            <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Level 4.2">Level
+                                            <li class="pc-item"><a class="pc-link" href="#!"
+                                                    data-i18n="Level 4.2">Level
                                                     4.2</a></li>
                                         </ul>
                                     </li>
@@ -1002,8 +1023,9 @@
                         </a>
                     </li>
                     <li class="dropdown pc-h-item">
-                        <a class="pc-head-link dropdown-toggle arrow-none m-0 trig-drp-search" data-bs-toggle="dropdown"
-                            href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <a class="pc-head-link dropdown-toggle arrow-none m-0 trig-drp-search"
+                            data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                            aria-expanded="false">
                             <i class="ph ph-magnifying-glass"></i>
                         </a>
                         <div class="dropdown-menu pc-h-dropdown drp-search">
@@ -1019,8 +1041,8 @@
             <div class="ms-auto">
                 <ul class="list-unstyled">
                     <li class="dropdown pc-h-item">
-                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
-                            role="button" aria-haspopup="false" aria-expanded="false">
+                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown"
+                            href="#" role="button" aria-haspopup="false" aria-expanded="false">
                             <i class="ph ph-sun-dim"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
@@ -1072,8 +1094,8 @@
                         </div>
                     </li>
                     <li class="dropdown pc-h-item">
-                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
-                            role="button" aria-haspopup="false" aria-expanded="false">
+                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown"
+                            href="#" role="button" aria-haspopup="false" aria-expanded="false">
                             <i class="ph ph-diamonds-four"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
@@ -1100,8 +1122,8 @@
                         </div>
                     </li>
                     <li class="dropdown pc-h-item">
-                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
-                            role="button" aria-haspopup="false" aria-expanded="false">
+                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown"
+                            href="#" role="button" aria-haspopup="false" aria-expanded="false">
                             <i class="ph ph-bell"></i>
                             <span class="badge bg-success pc-h-badge">5</span>
                         </a>
@@ -1144,13 +1166,15 @@
                                             <div class="flex-shrink-0">
                                                 <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
                                                     style="width: 40px; height: 40px;">
-                                                    <i class="ph ph-users text-primary" style="font-size: 16px;"></i>
+                                                    <i class="ph ph-users text-primary"
+                                                        style="font-size: 16px;"></i>
                                                 </div>
                                             </div>
                                             <div class="flex-grow-1 ms-3">
                                                 <span class="float-end text-sm text-muted">1 hour ago</span>
                                                 <h5 class="text-body mb-2">New Team Member</h5>
-                                                <p class="mb-0">Sarah Johnson joined your workspace and was assigned to
+                                                <p class="mb-0">Sarah Johnson joined your workspace and was assigned
+                                                    to
                                                     the Marketing team</p>
                                             </div>
                                         </div>
@@ -1172,7 +1196,8 @@
                                             <div class="flex-grow-1 ms-3">
                                                 <span class="float-end text-sm text-muted">3 hours ago</span>
                                                 <h5 class="text-body mb-2">Monthly Report Ready</h5>
-                                                <p class="mb-0">Your January 2025 analytics report is ready. Revenue up
+                                                <p class="mb-0">Your January 2025 analytics report is ready. Revenue
+                                                    up
                                                     24% vs last month</p>
                                             </div>
                                         </div>
@@ -1238,7 +1263,8 @@
                                             <div class="flex-grow-1 ms-3">
                                                 <span class="float-end text-sm text-muted">5 hour ago</span>
                                                 <h5 class="text-body mb-2">Security</h5>
-                                                <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text
+                                                <p class="mb-0">Lorem Ipsum has been the industry's standard dummy
+                                                    text
                                                     ever since the 1500s, when an unknown printer took a galley of
                                                     type and scrambled it to make a type</p>
                                             </div>
@@ -1252,14 +1278,16 @@
                         </div>
                     </li>
                     <li class="dropdown pc-h-item header-user-profile">
-                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
-                            role="button" aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
+                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown"
+                            href="#" role="button" aria-haspopup="false" data-bs-auto-close="outside"
+                            aria-expanded="false">
                             <i class="ph ph-user-circle"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
                             <div class="dropdown-header">
                                 <h6 class="mb-0">John Doe</h6>
-                                <small class="text-muted"><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                <small class="text-muted"><a href="/cdn-cgi/l/email-protection"
+                                        class="__cf_email__"
                                         data-cfemail="1b71747375357f747e5b7a78767e7874696b35787476">[email&#160;protected]</a></small>
                                 <span class="badge bg-success-subtle text-success mt-1">Pro Plan</span>
                             </div>
@@ -1583,14 +1611,16 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="text-center">
-                                        <div id="cpu-usage" style="height: 60px; width: 60px; margin: 0 auto;"></div>
+                                        <div id="cpu-usage" style="height: 60px; width: 60px; margin: 0 auto;">
+                                        </div>
                                         <h6 class="mt-2 mb-0">CPU Usage</h6>
                                         <span class="text-muted">67%</span>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="text-center">
-                                        <div id="memory-usage" style="height: 60px; width: 60px; margin: 0 auto;"></div>
+                                        <div id="memory-usage" style="height: 60px; width: 60px; margin: 0 auto;">
+                                        </div>
                                         <h6 class="mt-2 mb-0">Memory</h6>
                                         <span class="text-muted">82%</span>
                                     </div>
@@ -1622,7 +1652,8 @@
                                         <tr>
                                             <th>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="select-all">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="select-all">
                                                 </div>
                                             </th>
                                             <th>Customer</th>
@@ -1647,7 +1678,8 @@
                                                     <div>
                                                         <h6 class="mb-0">Sarah Johnson</h6>
                                                         <span class="text-muted f-12"><a
-                                                                href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                                                href="/cdn-cgi/l/email-protection"
+                                                                class="__cf_email__"
                                                                 data-cfemail="9ceffdeefdf4dcf9e4fdf1ecf0f9b2fff3f1">[email&#160;protected]</a></span>
                                                     </div>
                                                 </div>
@@ -1694,7 +1726,8 @@
                                                     <div>
                                                         <h6 class="mb-0">Michael Chen</h6>
                                                         <span class="text-muted f-12"><a
-                                                                href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                                                href="/cdn-cgi/l/email-protection"
+                                                                class="__cf_email__"
                                                                 data-cfemail="2845414b40494d44684d50494558444d064b4745">[email&#160;protected]</a></span>
                                                     </div>
                                                 </div>
@@ -1741,7 +1774,8 @@
                                                     <div>
                                                         <h6 class="mb-0">Emma Wilson</h6>
                                                         <span class="text-muted f-12"><a
-                                                                href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                                                href="/cdn-cgi/l/email-protection"
+                                                                class="__cf_email__"
                                                                 data-cfemail="96f3fbfbf7d6f3eef7fbe6faf3b8f5f9fb">[email&#160;protected]</a></span>
                                                     </div>
                                                 </div>
@@ -1788,7 +1822,8 @@
                                                     <div>
                                                         <h6 class="mb-0">Alex Rodriguez</h6>
                                                         <span class="text-muted f-12"><a
-                                                                href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                                                href="/cdn-cgi/l/email-protection"
+                                                                class="__cf_email__"
                                                                 data-cfemail="3e5f525b467e5b465f534e525b105d5153">[email&#160;protected]</a></span>
                                                     </div>
                                                 </div>
@@ -1835,7 +1870,8 @@
                                                     <div>
                                                         <h6 class="mb-0">Maria Garcia</h6>
                                                         <span class="text-muted f-12"><a
-                                                                href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                                                href="/cdn-cgi/l/email-protection"
+                                                                class="__cf_email__"
                                                                 data-cfemail="1e737f6c777f5e7b667f736e727b307d7173">[email&#160;protected]</a></span>
                                                     </div>
                                                 </div>
@@ -1882,7 +1918,8 @@
                                                     <div>
                                                         <h6 class="mb-0">David Kim</h6>
                                                         <span class="text-muted f-12"><a
-                                                                href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                                                href="/cdn-cgi/l/email-protection"
+                                                                class="__cf_email__"
                                                                 data-cfemail="b5d1d4c3dcd1f5d0cdd4d8c5d9d09bd6dad8">[email&#160;protected]</a></span>
                                                     </div>
                                                 </div>
@@ -1929,7 +1966,8 @@
                                                     <div>
                                                         <h6 class="mb-0">Lisa Thompson</h6>
                                                         <span class="text-muted f-12"><a
-                                                                href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                                                href="/cdn-cgi/l/email-protection"
+                                                                class="__cf_email__"
                                                                 data-cfemail="34585d475574514c55594458511a575b59">[email&#160;protected]</a></span>
                                                     </div>
                                                 </div>
@@ -2241,7 +2279,8 @@
         <div class="footer-wrapper container-fluid">
             <div class="row">
                 <div class="col my-1">
-                    <p class="m-0">Admindek by <a href="https://dashboardpack.com/" target="_blank">DashboardPack</a>
+                    <p class="m-0">Admindek by <a href="https://dashboardpack.com/"
+                            target="_blank">DashboardPack</a>
                     </p>
                 </div>
                 <div class="col-md-auto my-1">
@@ -2290,7 +2329,8 @@
         <div class="customizer-search">
             <div class="search-container">
                 <i class="ph ph-magnifying-glass search-icon"></i>
-                <input type="text" class="search-input" placeholder="Search settings..." id="customizer-search">
+                <input type="text" class="search-input" placeholder="Search settings..."
+                    id="customizer-search">
             </div>
         </div>
 
@@ -2314,8 +2354,9 @@
         </div>
         <div class="customizer-navigation">
             <div class="nav-pills-modern" id="customizer-nav" role="tablist">
-                <button class="nav-pill active" id="layout-tab" data-bs-toggle="pill" data-bs-target="#layout-panel"
-                    type="button" role="tab" aria-controls="layout-panel" aria-selected="true">
+                <button class="nav-pill active" id="layout-tab" data-bs-toggle="pill"
+                    data-bs-target="#layout-panel" type="button" role="tab" aria-controls="layout-panel"
+                    aria-selected="true">
                     <i class="ph ph-layout"></i>
                     <span>Layout</span>
                 </button>
@@ -2324,8 +2365,9 @@
                     <i class="ph ph-palette"></i>
                     <span>Colors</span>
                 </button>
-                <button class="nav-pill" id="advanced-tab" data-bs-toggle="pill" data-bs-target="#advanced-panel"
-                    type="button" role="tab" aria-controls="advanced-panel" aria-selected="false">
+                <button class="nav-pill" id="advanced-tab" data-bs-toggle="pill"
+                    data-bs-target="#advanced-panel" type="button" role="tab"
+                    aria-controls="advanced-panel" aria-selected="false">
                     <i class="ph ph-gear-six"></i>
                     <span>Advanced</span>
                 </button>
@@ -2418,12 +2460,15 @@
                                     <button class="image-toggle active" data-value="false"
                                         onclick="layout_rtl_change('false');" data-bs-toggle="tooltip"
                                         title="Left to Right">
-                                        <img src="images/customizer/ltr.svg" alt="LTR" class="toggle-preview">
+                                        <img src="images/customizer/ltr.svg" alt="LTR"
+                                            class="toggle-preview">
                                         <span class="toggle-label">LTR</span>
                                     </button>
-                                    <button class="image-toggle" data-value="true" onclick="layout_rtl_change('true');"
-                                        data-bs-toggle="tooltip" title="Right to Left">
-                                        <img src="images/customizer/rtl.svg" alt="RTL" class="toggle-preview">
+                                    <button class="image-toggle" data-value="true"
+                                        onclick="layout_rtl_change('true');" data-bs-toggle="tooltip"
+                                        title="Right to Left">
+                                        <img src="images/customizer/rtl.svg" alt="RTL"
+                                            class="toggle-preview">
                                         <span class="toggle-label">RTL</span>
                                     </button>
                                 </div>
@@ -2474,8 +2519,8 @@
                                         <span class="color-preview-small" style="background: #4680ff;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Royal Purple"
-                                        data-value="preset-2">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Royal Purple" data-value="preset-2">
                                         <span class="color-preview-small" style="background: #7c4dff;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
@@ -2484,23 +2529,23 @@
                                         <span class="color-preview-small" style="background: #e91e63;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Crimson Red"
-                                        data-value="preset-4">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Crimson Red" data-value="preset-4">
                                         <span class="color-preview-small" style="background: #dc2626;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Vibrant Orange"
-                                        data-value="preset-5">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Vibrant Orange" data-value="preset-5">
                                         <span class="color-preview-small" style="background: #ff9800;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Golden Yellow"
-                                        data-value="preset-6">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Golden Yellow" data-value="preset-6">
                                         <span class="color-preview-small" style="background: #ffd54f;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Forest Green"
-                                        data-value="preset-7">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Forest Green" data-value="preset-7">
                                         <span class="color-preview-small" style="background: #4caf50;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
@@ -2510,8 +2555,8 @@
                                         <i class="ph ph-check color-check"></i>
                                     </button>
                                 </div>
-                                <button class="reset-color-btn" data-target="preset-color" data-bs-toggle="tooltip"
-                                    title="Reset to default">
+                                <button class="reset-color-btn" data-target="preset-color"
+                                    data-bs-toggle="tooltip" title="Reset to default">
                                     <i class="ph ph-arrow-clockwise"></i>
                                     <span>Reset to Default</span>
                                 </button>
@@ -2529,8 +2574,8 @@
                                         <span class="color-preview-small" style="background: #4680ff;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Royal Purple"
-                                        data-value="preset-2">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Royal Purple" data-value="preset-2">
                                         <span class="color-preview-small" style="background: #7c4dff;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
@@ -2539,23 +2584,23 @@
                                         <span class="color-preview-small" style="background: #e91e63;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Crimson Red"
-                                        data-value="preset-4">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Crimson Red" data-value="preset-4">
                                         <span class="color-preview-small" style="background: #dc2626;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Vibrant Orange"
-                                        data-value="preset-5">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Vibrant Orange" data-value="preset-5">
                                         <span class="color-preview-small" style="background: #ff9800;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Golden Yellow"
-                                        data-value="preset-6">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Golden Yellow" data-value="preset-6">
                                         <span class="color-preview-small" style="background: #ffd54f;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Forest Green"
-                                        data-value="preset-7">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Forest Green" data-value="preset-7">
                                         <span class="color-preview-small" style="background: #4caf50;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
@@ -2565,8 +2610,8 @@
                                         <i class="ph ph-check color-check"></i>
                                     </button>
                                 </div>
-                                <button class="reset-color-btn" data-target="header-color" data-bs-toggle="tooltip"
-                                    title="Reset to default">
+                                <button class="reset-color-btn" data-target="header-color"
+                                    data-bs-toggle="tooltip" title="Reset to default">
                                     <i class="ph ph-arrow-clockwise"></i>
                                     <span>Reset to Default</span>
                                 </button>
@@ -2584,8 +2629,8 @@
                                         <span class="color-preview-small" style="background: #4680ff;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Royal Purple"
-                                        data-value="preset-2">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Royal Purple" data-value="preset-2">
                                         <span class="color-preview-small" style="background: #7c4dff;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
@@ -2594,23 +2639,23 @@
                                         <span class="color-preview-small" style="background: #e91e63;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Crimson Red"
-                                        data-value="preset-4">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Crimson Red" data-value="preset-4">
                                         <span class="color-preview-small" style="background: #dc2626;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Vibrant Orange"
-                                        data-value="preset-5">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Vibrant Orange" data-value="preset-5">
                                         <span class="color-preview-small" style="background: #ff9800;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Golden Yellow"
-                                        data-value="preset-6">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Golden Yellow" data-value="preset-6">
                                         <span class="color-preview-small" style="background: #ffd54f;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Forest Green"
-                                        data-value="preset-7">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Forest Green" data-value="preset-7">
                                         <span class="color-preview-small" style="background: #4caf50;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
@@ -2620,8 +2665,8 @@
                                         <i class="ph ph-check color-check"></i>
                                     </button>
                                 </div>
-                                <button class="reset-color-btn" data-target="navbar-color" data-bs-toggle="tooltip"
-                                    title="Reset to default">
+                                <button class="reset-color-btn" data-target="navbar-color"
+                                    data-bs-toggle="tooltip" title="Reset to default">
                                     <i class="ph ph-arrow-clockwise"></i>
                                     <span>Reset to Default</span>
                                 </button>
@@ -2639,8 +2684,8 @@
                                         <span class="color-preview-small" style="background: #4680ff;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Royal Purple"
-                                        data-value="preset-2">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Royal Purple" data-value="preset-2">
                                         <span class="color-preview-small" style="background: #7c4dff;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
@@ -2649,23 +2694,23 @@
                                         <span class="color-preview-small" style="background: #e91e63;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Crimson Red"
-                                        data-value="preset-4">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Crimson Red" data-value="preset-4">
                                         <span class="color-preview-small" style="background: #dc2626;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Vibrant Orange"
-                                        data-value="preset-5">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Vibrant Orange" data-value="preset-5">
                                         <span class="color-preview-small" style="background: #ff9800;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Golden Yellow"
-                                        data-value="preset-6">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Golden Yellow" data-value="preset-6">
                                         <span class="color-preview-small" style="background: #ffd54f;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Forest Green"
-                                        data-value="preset-7">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Forest Green" data-value="preset-7">
                                         <span class="color-preview-small" style="background: #4caf50;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
@@ -2694,8 +2739,8 @@
                                         <span class="color-preview-small" style="background: #4680ff;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Royal Purple"
-                                        data-value="preset-2">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Royal Purple" data-value="preset-2">
                                         <span class="color-preview-small" style="background: #7c4dff;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
@@ -2704,23 +2749,23 @@
                                         <span class="color-preview-small" style="background: #e91e63;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Crimson Red"
-                                        data-value="preset-4">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Crimson Red" data-value="preset-4">
                                         <span class="color-preview-small" style="background: #dc2626;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Vibrant Orange"
-                                        data-value="preset-5">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Vibrant Orange" data-value="preset-5">
                                         <span class="color-preview-small" style="background: #ff9800;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Golden Yellow"
-                                        data-value="preset-6">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Golden Yellow" data-value="preset-6">
                                         <span class="color-preview-small" style="background: #ffd54f;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
-                                    <button class="color-swatch-small" data-bs-toggle="tooltip" title="Forest Green"
-                                        data-value="preset-7">
+                                    <button class="color-swatch-small" data-bs-toggle="tooltip"
+                                        title="Forest Green" data-value="preset-7">
                                         <span class="color-preview-small" style="background: #4caf50;"></span>
                                         <i class="ph ph-check color-check"></i>
                                     </button>
@@ -2730,8 +2775,8 @@
                                         <i class="ph ph-check color-check"></i>
                                     </button>
                                 </div>
-                                <button class="reset-color-btn" data-target="caption-color" data-bs-toggle="tooltip"
-                                    title="Reset to default">
+                                <button class="reset-color-btn" data-target="caption-color"
+                                    data-bs-toggle="tooltip" title="Reset to default">
                                     <i class="ph ph-arrow-clockwise"></i>
                                     <span>Reset to Default</span>
                                 </button>
@@ -2739,8 +2784,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane-modern fade" id="advanced-panel" role="tabpanel" aria-labelledby="advanced-tab"
-                    tabindex="0">
+                <div class="tab-pane-modern fade" id="advanced-panel" role="tabpanel"
+                    aria-labelledby="advanced-tab" tabindex="0">
                     <div class="settings-group">
                         <div class="group-header">
                             <h6 class="group-title">Advanced Settings</h6>
@@ -2753,8 +2798,8 @@
                             </div>
                             <div class="setting-control">
                                 <div class="icon-selector drp-menu-icon">
-                                    <button class="icon-option active" data-value="preset-1" data-bs-toggle="tooltip"
-                                        title="Chevron Right">
+                                    <button class="icon-option active" data-value="preset-1"
+                                        data-bs-toggle="tooltip" title="Chevron Right">
                                         <i class="ph ph-caret-right"></i>
                                     </button>
                                     <button class="icon-option" data-value="preset-2" data-bs-toggle="tooltip"
@@ -2783,8 +2828,8 @@
                             </div>
                             <div class="setting-control">
                                 <div class="icon-selector drp-menu-link-icon">
-                                    <button class="icon-option active" data-value="preset-1" data-bs-toggle="tooltip"
-                                        title="No Icon">
+                                    <button class="icon-option active" data-value="preset-1"
+                                        data-bs-toggle="tooltip" title="No Icon">
                                         <span class="no-icon">None</span>
                                     </button>
                                     <button class="icon-option" data-value="preset-2" data-bs-toggle="tooltip"
@@ -2820,16 +2865,16 @@
     <!-- [Page Specific JS] start -->
     <!-- apexcharts js -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="{{asset('assets/js/plugins/apexcharts.min.js')}}"></script>
+    <script src="{{ asset('assets/js/plugins/apexcharts.min.js') }}"></script>
 
     <!-- Vector maps -->
-    <script src="{{asset('assets/js/plugins/jsvectormap.min.js')}}"></script>
-    <script src="{{asset('assets/js/plugins/world.js')}}"></script>
+    <script src="{{ asset('assets/js/plugins/jsvectormap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/world.js') }}"></script>
 
     <!-- Enhanced Dashboard Widgets -->
-    <script src="{{asset('assets/js/widgets/world-low.js')}}"></script>
-    <script src="{{asset('assets/js/widgets/device-chart.js')}}"></script>
-    <script src="{{asset('assets/js/widgets/happy-sad-ball.js')}}"></script>
+    <script src="{{ asset('assets/js/widgets/world-low.js') }}"></script>
+    <script src="{{ asset('assets/js/widgets/device-chart.js') }}"></script>
+    <script src="{{ asset('assets/js/widgets/happy-sad-ball.js') }}"></script>
 
     <!-- Custom Enhanced Dashboard JS -->
     <script>
@@ -2840,53 +2885,81 @@
                     type: 'line',
                     width: 80,
                     height: 50,
-                    sparkline: { enabled: true }
+                    sparkline: {
+                        enabled: true
+                    }
                 },
                 series: [{
                     data: [31, 40, 28, 51, 42, 85, 77]
                 }],
-                stroke: { width: 2, colors: ['#ffffff'] },
-                tooltip: { enabled: false }
+                stroke: {
+                    width: 2,
+                    colors: ['#ffffff']
+                },
+                tooltip: {
+                    enabled: false
+                }
             },
             activeUsers: {
                 chart: {
                     type: 'area',
                     width: 80,
                     height: 50,
-                    sparkline: { enabled: true }
+                    sparkline: {
+                        enabled: true
+                    }
                 },
                 series: [{
                     data: [11, 32, 45, 32, 34, 52, 41]
                 }],
-                fill: { colors: ['#ffffff'], opacity: 0.3 },
-                stroke: { colors: ['#ffffff'] },
-                tooltip: { enabled: false }
+                fill: {
+                    colors: ['#ffffff'],
+                    opacity: 0.3
+                },
+                stroke: {
+                    colors: ['#ffffff']
+                },
+                tooltip: {
+                    enabled: false
+                }
             },
             orders: {
                 chart: {
                     type: 'bar',
                     width: 80,
                     height: 50,
-                    sparkline: { enabled: true }
+                    sparkline: {
+                        enabled: true
+                    }
                 },
                 series: [{
                     data: [47, 45, 54, 38, 56, 24, 65]
                 }],
                 colors: ['#ffffff'],
-                tooltip: { enabled: false }
+                tooltip: {
+                    enabled: false
+                }
             },
             conversion: {
                 chart: {
                     type: 'line',
                     width: 80,
                     height: 50,
-                    sparkline: { enabled: true }
+                    sparkline: {
+                        enabled: true
+                    }
                 },
                 series: [{
                     data: [15, 75, 47, 65, 55, 70, 85]
                 }],
-                stroke: { width: 2, colors: ['#ffffff'], curve: 'smooth' },
-                tooltip: { enabled: false }
+                stroke: {
+                    width: 2,
+                    colors: ['#ffffff'],
+                    curve: 'smooth'
+                },
+                tooltip: {
+                    enabled: false
+                }
             }
         };
 
@@ -2903,8 +2976,16 @@
             chart: {
                 type: 'area',
                 height: 350,
-                animations: { enabled: true, easing: 'linear', dynamicAnimation: { speed: 1000 } },
-                toolbar: { show: false }
+                animations: {
+                    enabled: true,
+                    easing: 'linear',
+                    dynamicAnimation: {
+                        speed: 1000
+                    }
+                },
+                toolbar: {
+                    show: false
+                }
             },
             series: [{
                 name: 'Sessions',
@@ -2917,8 +2998,12 @@
                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
             },
             colors: ['#4680ff', '#04a9f5'],
-            fill: { opacity: 0.3 },
-            stroke: { curve: 'smooth' }
+            fill: {
+                opacity: 0.3
+            },
+            stroke: {
+                curve: 'smooth'
+            }
         };
 
         if (document.querySelector('#real-time-chart')) {
@@ -2928,45 +3013,77 @@
         // Performance Metrics Charts
         const performanceCharts = {
             salesPerformance: {
-                chart: { type: 'radialBar', height: 120 },
+                chart: {
+                    type: 'radialBar',
+                    height: 120
+                },
                 series: [87],
                 colors: ['#4680ff'],
                 plotOptions: {
                     radialBar: {
-                        hollow: { size: '70%' },
-                        dataLabels: { show: false }
+                        hollow: {
+                            size: '70%'
+                        },
+                        dataLabels: {
+                            show: false
+                        }
                     }
                 }
             },
             customerSatisfaction: {
-                chart: { type: 'donut', height: 120 },
+                chart: {
+                    type: 'donut',
+                    height: 120
+                },
                 series: [4.8, 1.2],
                 colors: ['#2ed8b6', '#e9ecef'],
                 plotOptions: {
                     pie: {
-                        donut: { size: '70%' }
+                        donut: {
+                            size: '70%'
+                        }
                     }
                 },
-                legend: { show: false },
-                dataLabels: { enabled: false }
+                legend: {
+                    show: false
+                },
+                dataLabels: {
+                    enabled: false
+                }
             },
             systemUptime: {
-                chart: { type: 'radialBar', height: 120 },
+                chart: {
+                    type: 'radialBar',
+                    height: 120
+                },
                 series: [99.9],
                 colors: ['#ffb64d'],
                 plotOptions: {
                     radialBar: {
-                        hollow: { size: '70%' },
-                        dataLabels: { show: false }
+                        hollow: {
+                            size: '70%'
+                        },
+                        dataLabels: {
+                            show: false
+                        }
                     }
                 }
             },
             apiResponse: {
-                chart: { type: 'line', height: 120, sparkline: { enabled: true } },
+                chart: {
+                    type: 'line',
+                    height: 120,
+                    sparkline: {
+                        enabled: true
+                    }
+                },
                 series: [{
                     data: [247, 251, 245, 249, 243, 247, 250, 248, 247]
                 }],
-                stroke: { curve: 'smooth', colors: ['#04a9f5'] }
+                stroke: {
+                    curve: 'smooth',
+                    colors: ['#04a9f5']
+                }
             }
         };
 
@@ -2982,7 +3099,9 @@
             chart: {
                 type: 'line',
                 height: 300,
-                toolbar: { show: false }
+                toolbar: {
+                    show: false
+                }
             },
             series: [{
                 name: 'Actual Revenue',
@@ -3032,24 +3151,40 @@
         // CPU and Memory Usage Charts
         const systemCharts = {
             cpuUsage: {
-                chart: { type: 'radialBar', height: 60, width: 60 },
+                chart: {
+                    type: 'radialBar',
+                    height: 60,
+                    width: 60
+                },
                 series: [67],
                 colors: ['#f44336'],
                 plotOptions: {
                     radialBar: {
-                        hollow: { size: '50%' },
-                        dataLabels: { show: false }
+                        hollow: {
+                            size: '50%'
+                        },
+                        dataLabels: {
+                            show: false
+                        }
                     }
                 }
             },
             memoryUsage: {
-                chart: { type: 'radialBar', height: 60, width: 60 },
+                chart: {
+                    type: 'radialBar',
+                    height: 60,
+                    width: 60
+                },
                 series: [82],
                 colors: ['#ff9800'],
                 plotOptions: {
                     radialBar: {
-                        hollow: { size: '50%' },
-                        dataLabels: { show: false }
+                        hollow: {
+                            size: '50%'
+                        },
+                        dataLabels: {
+                            show: false
+                        }
                     }
                 }
             }
@@ -3103,14 +3238,14 @@
     </script>
     <!-- [Page Specific JS] end -->
     <!-- Required JS -->
-    <script src="{{asset('assets/js/plugins/popper.min.js')}}"></script>
-    <script src="{{asset('assets/js/plugins/simplebar.min.js')}}"></script>
-    <script src="{{asset('assets/js/plugins/bootstrap.min.js')}}"></script>
-    <script src="{{asset('assets/js/plugins/i18next.min.js')}}"></script>
-    <script src="{{asset('assets/js/plugins/i18nextHttpBackend.min.js')}}"></script>
-    <script src="{{asset('assets/js/script.js')}}"></script>
-    <script src="{{asset('assets/js/theme.js')}}"></script>
-    <script src="{{asset('assets/js/multi-lang.js')}}"></script>
+    <script src="{{ asset('assets/js/plugins/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/i18next.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/i18nextHttpBackend.min.js') }}"></script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+    <script src="{{ asset('assets/js/theme.js') }}"></script>
+    <script src="{{ asset('assets/js/multi-lang.js') }}"></script>
 
     <!-- Theme Configuration Scripts (hardcoded based on vite.config.js values) -->
     <script>
@@ -3132,8 +3267,7 @@
         layout_theme_sidebar_change('false');
     </script>
 
-    <script defer
-        src="https://static.cloudflareinsights.com/beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043"
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043"
         integrity="sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg=="
         data-cf-beacon='{"version":"2024.11.0","token":"a6117f2172474edeb039d2a90d541d53","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
