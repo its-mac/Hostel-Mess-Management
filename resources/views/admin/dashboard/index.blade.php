@@ -7,7 +7,7 @@
                     <div class="row align-items-center">
                         <div class="col-md-12">
                             <div class="page-header-title">
-                                <h5 class="mb-0">Dashboard-active</h5>
+                                <h5 class="mb-0">Admin | Dashboard-active</h5>
                             </div>
                         </div>
                         <div class="col-md-12">

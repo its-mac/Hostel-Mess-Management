@@ -19,6 +19,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Ensure the `role` middleware alias is available in all runtime contexts
+        // (tests, tinker, artisan) by registering it here.
+        $this->app['router']->aliasMiddleware('role', \App\Http\Middleware\RoleMiddleware::class);
     }
 }

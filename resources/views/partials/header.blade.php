@@ -103,10 +103,13 @@
                             <i class="ph ph-lock-key"></i>
                             <span>Lock Screen</span>
                         </a>
-                        <a href="#!" class="dropdown-item">
-                            <i class="ph ph-power"></i>
-                            <span>Logout</span>
-                        </a>
+                        <form action="{{ route('auth.logout') }}" method="POST" class="d-inline">
+                            @csrf
+                            <button type="submit" class="dropdown-item border-0 bg-transparent p-0">
+                                <i class="ph ph-power"></i>
+                                <span>Logout</span>
+                            </button>
+                        </form>
                     </div>
                 </li>
                 <li class="dropdown pc-h-item">

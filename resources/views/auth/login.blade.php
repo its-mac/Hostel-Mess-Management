@@ -79,7 +79,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                                     </div>
                                 @endif
-                                <form action="{{ route('auth.login') }}" method="POST">
+                                <form action="{{ route('login.submit') }}" method="POST">
                                     @csrf
                                     <div class="mb-3">
                                         <input type="email" class="form-control @error('email') is-invalid @enderror"
@@ -100,7 +100,7 @@
                                     <div class="d-flex mt-1 justify-content-between align-items-center">
                                         <div class="form-check">
                                             <input class="form-check-input input-primary" type="checkbox"
-                                                name="remember" id="remember" />
+                                                name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} />
                                             <label class="form-check-label text-muted" for="remember">Remember
                                                 me?</label>
                                         </div>
@@ -113,7 +113,7 @@
                                 </form>
                                 <div class="d-flex justify-content-between align-items-end mt-4">
                                     <h6 class="f-w-500 mb-0">Don't have an Account?</h6>
-                                    <a href="{{ route('auth.register') }}" class="link-primary">Create Account</a>
+                                    <a href="{{ route('register') }}" class="link-primary">Create Account</a>
                                 </div>
                             </div>
                         </div>

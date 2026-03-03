@@ -7,10 +7,8 @@
     <!-- [Meta] -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
-    <meta name="description"
-        content="Online Hostel Management System" />
-    <meta name="keywords"
-        content="hostel, mess, management, online hostel system" />
+    <meta name="description" content="Online Hostel Management System" />
+    <meta name="keywords" content="hostel, mess, management, online hostel system" />
     <meta name="author" content="M. Abu Bakar, Saba Elahi, Fatima Batool" />
     <meta name="theme-color" content="#1e293b" />
     <meta name="color-scheme" content="light dark" />
@@ -18,15 +16,13 @@
     <!-- [Open Graph] -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Register | Online Hostel Management System" />
-    <meta property="og:description"
-        content="Register for your Online Hostel Management System account." />
+    <meta property="og:description" content="Register for your Online Hostel Management System account." />
     <meta property="og:site_name" content="Online Hostel Management System" />
 
     <!-- [Twitter/X Card] -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Register | Online Hostel Management System" />
-    <meta name="twitter:description"
-        content="Register for your Online Hostel Management System account." />
+    <meta name="twitter:description" content="Register for your Online Hostel Management System account." />
 
     <!-- [Favicon] icons -->
     <link rel="icon" href="../assets/images/logo.png" type="image/png+svg+xml" />
@@ -73,41 +69,74 @@
                                     <a href="#"><img src="../assets/images/logo-dark.svg" alt="img" /></a>
                                 </div>
                                 <h4 class="text-center f-w-500 mt-4 mb-3">Sign up</h4>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="First Name" />
+                                @if ($errors->any())
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        @foreach ($errors->all() as $error)
+                                            <div>{{ $error }}</div>
+                                        @endforeach
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    </div>
+                                @endif
+                                <form action="{{ route('register.submit') }}" method="POST">
+                                    @csrf
+                                    <div class="mb-3">
+                                        <input type="text" name="name"
+                                            class="form-control @error('name') is-invalid @enderror"
+                                            placeholder="Full Name" value="{{ old('name') }}" required />
+                                        @error('name')
+                                            <span class="invalid-feedback">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" name="email"
+                                            class="form-control @error('email') is-invalid @enderror"
+                                            placeholder="Email Address" value="{{ old('email') }}" required />
+                                        @error('email')
+                                            <span class="invalid-feedback">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="password" name="password"
+                                            class="form-control @error('password') is-invalid @enderror"
+                                            placeholder="Password" required />
+                                        @error('password')
+                                            <span class="invalid-feedback">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="password" name="password_confirmation" class="form-control"
+                                            placeholder="Confirm Password" required />
+                                    </div>
+                                    <div class="mb-3">
+                                        <select name="role" class="form-select @error('role') is-invalid @enderror"
+                                            required>
+                                            <option value="" disabled selected>Select role</option>
+                                            <option value="admin" {{ old('role') == 'admin' ? 'selected' : '' }}>Admin
+                                            </option>
+                                            <option value="manager" {{ old('role') == 'manager' ? 'selected' : '' }}>Manager
+                                            </option>
+                                            <option value="student" {{ old('role') == 'student' ? 'selected' : '' }}>Student
+                                            </option>
+                                        </select>
+                                        @error('role')
+                                            <span class="invalid-feedback">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+                                    <div class="d-flex mt-1 justify-content-between">
+                                        <div class="form-check">
+                                            <input class="form-check-input input-primary" type="checkbox"
+                                                id="customCheckc1" checked="" />
+                                            <label class="form-check-label text-muted" for="customCheckc1">I agree to
+                                                all the Terms & Condition</label>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Last Name" />
-                                        </div>
+                                    <div class="text-center mt-4">
+                                        <button type="submit" class="btn btn-primary shadow px-sm-4">Sign up</button>
                                     </div>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Email Address" />
-                                </div>
-                                <div class="mb-3">
-                                    <input type="password" class="form-control" placeholder="Password" />
-                                </div>
-                                <div class="mb-3">
-                                    <input type="password" class="form-control" placeholder="Confirm Password" />
-                                </div>
-                                <div class="d-flex mt-1 justify-content-between">
-                                    <div class="form-check">
-                                        <input class="form-check-input input-primary" type="checkbox" id="customCheckc1"
-                                            checked="" />
-                                        <label class="form-check-label text-muted" for="customCheckc1">I agree to all
-                                            the Terms & Condition</label>
-                                    </div>
-                                </div>
-                                <div class="text-center mt-4">
-                                    <button type="button" class="btn btn-primary shadow px-sm-4">Sign up</button>
-                                </div>
+                                </form>
                                 <div class="d-flex justify-content-between align-items-end mt-4">
                                     <h6 class="f-w-500 mb-0">Already have an Account?</h6>
-                                    <a href="{{ route('auth.login') }}" class="link-primary">Login</a>
+                                    <a href="{{ route('login') }}" class="link-primary">Login</a>
                                 </div>
                             </div>
                         </div>
