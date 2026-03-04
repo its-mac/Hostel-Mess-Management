@@ -5,13 +5,13 @@
             <div class="row align-items-center">
                 <div class="col-md-12">
                     <div class="page-header-title">
-                        <h5 class="mb-0">Create Manager</h5>
+                        <h5 class="mb-0">Add Student</h5>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <ul class="breadcrumb mb-0">
                         <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('admin.managers') }}">Managers</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('admin.students') }}">Students</a></li>
                         <li class="breadcrumb-item" aria-current="page">Create</li>
                     </ul>
                 </div>
@@ -21,13 +21,24 @@
 
     <div class="card">
         <div class="card-header d-flex align-items-center justify-content-between">
-            <h5>Add New Manager</h5>
-            <a href="{{ route('admin.managers') }}" class="btn btn-sm btn-outline-secondary">Back</a>
+            <h5>Add New Student</h5>
+            <a href="{{ route('admin.students') }}" class="btn btn-sm btn-outline-secondary">Back</a>
         </div>
-        <form action="{{ route('admin.managers.store') }}" method="POST">
+        <form action="{{ route('admin.students.store') }}" method="POST">
             @csrf
             <div class="card-body">
                 <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="roll_number">Roll Number <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control @error('roll_number') is-invalid @enderror"
+                                id="roll_number" name="roll_number" value="{{ old('roll_number') }}" required>
+                            @error('roll_number')
+                                <div class="invalid-feedback d-block">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label class="form-label" for="name">Name <span class="text-danger">*</span></label>
@@ -38,6 +49,9 @@
                             @enderror
                         </div>
                     </div>
+                </div>
+
+                <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label class="form-label" for="email">Email <span class="text-danger">*</span></label>
@@ -48,9 +62,6 @@
                             @enderror
                         </div>
                     </div>
-                </div>
-
-                <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label class="form-label" for="phone">Phone</label>
@@ -61,9 +72,12 @@
                             @enderror
                         </div>
                     </div>
+                </div>
+
+                <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
-                            <label class="form-label" for="hostel_id">Assigned Hostel</label>
+                            <label class="form-label" for="hostel_id">Hostel Assignment</label>
                             <select class="form-select @error('hostel_id') is-invalid @enderror" id="hostel_id"
                                 name="hostel_id">
                                 <option value="">Select Hostel</option>
@@ -78,38 +92,62 @@
                             @enderror
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="room_number">Room Number</label>
+                            <input type="text" class="form-control @error('room_number') is-invalid @enderror"
+                                id="room_number" name="room_number" value="{{ old('room_number') }}">
+                            @error('room_number')
+                                <div class="invalid-feedback d-block">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
-                            <label class="form-label" for="qualification">Qualification</label>
-                            <input type="text" class="form-control @error('qualification') is-invalid @enderror"
-                                id="qualification" name="qualification" value="{{ old('qualification') }}"
-                                placeholder="e.g., Bachelor's Degree">
-                            @error('qualification')
+                            <label class="form-label" for="check_in_date">Check-in Date</label>
+                            <input type="date" class="form-control @error('check_in_date') is-invalid @enderror"
+                                id="check_in_date" name="check_in_date" value="{{ old('check_in_date') }}">
+                            @error('check_in_date')
                                 <div class="invalid-feedback d-block">{{ $message }}</div>
                             @enderror
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-3">
-                            <label class="form-label" for="experience">Years of Experience</label>
-                            <input type="number" class="form-control @error('experience') is-invalid @enderror"
-                                id="experience" name="experience" value="{{ old('experience') }}" min="0">
-                            @error('experience')
+                            <label class="form-label" for="check_out_date">Check-out Date</label>
+                            <input type="date" class="form-control @error('check_out_date') is-invalid @enderror"
+                                id="check_out_date" name="check_out_date" value="{{ old('check_out_date') }}">
+                            @error('check_out_date')
                                 <div class="invalid-feedback d-block">{{ $message }}</div>
                             @enderror
                         </div>
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label" for="address">Address</label>
-                    <textarea class="form-control @error('address') is-invalid @enderror" id="address" name="address" rows="3">{{ old('address') }}</textarea>
-                    @error('address')
-                        <div class="invalid-feedback d-block">{{ $message }}</div>
-                    @enderror
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="guardian_name">Guardian Name</label>
+                            <input type="text" class="form-control @error('guardian_name') is-invalid @enderror"
+                                id="guardian_name" name="guardian_name" value="{{ old('guardian_name') }}">
+                            @error('guardian_name')
+                                <div class="invalid-feedback d-block">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="emergency_contact">Emergency Contact</label>
+                            <input type="tel" class="form-control @error('emergency_contact') is-invalid @enderror"
+                                id="emergency_contact" name="emergency_contact" value="{{ old('emergency_contact') }}">
+                            @error('emergency_contact')
+                                <div class="invalid-feedback d-block">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
                 </div>
 
                 <div class="mb-3">
@@ -119,7 +157,8 @@
                         <option value="">Select Status</option>
                         <option value="active" @selected(old('status') === 'active')>Active</option>
                         <option value="inactive" @selected(old('status') === 'inactive')>Inactive</option>
-                        <option value="leave" @selected(old('status') === 'leave')>On Leave</option>
+                        <option value="graduated" @selected(old('status') === 'graduated')>Graduated</option>
+                        <option value="suspended" @selected(old('status') === 'suspended')>Suspended</option>
                     </select>
                     @error('status')
                         <div class="invalid-feedback d-block">{{ $message }}</div>
@@ -127,8 +166,8 @@
                 </div>
             </div>
             <div class="card-footer">
-                <button type="submit" class="btn btn-primary me-2">Create Manager</button>
-                <a href="{{ route('admin.managers') }}" class="btn btn-link-danger">Cancel</a>
+                <button type="submit" class="btn btn-primary me-2">Add Student</button>
+                <a href="{{ route('admin.students') }}" class="btn btn-link-danger">Cancel</a>
             </div>
         </form>
     </div>

@@ -27,10 +27,14 @@
                 <span class="pc-arrow"><i class="ph ph-caret-right"></i></span>
             </a>
             <ul class="pc-submenu">
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Room Availability">Room Availability</a></li>
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Assign Rooms">Assign Rooms</a></li>
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Room Maintenance">Room Maintenance</a></li>
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Check-In/Out">Check-In / Check-Out</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.room-availability') }}"
+                        data-i18n="Room Availability">Room Availability</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.assign-rooms') }}"
+                        data-i18n="Assign Rooms">Assign Rooms</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.room-maintenance') }}"
+                        data-i18n="Room Maintenance">Room Maintenance</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.checkin-out') }}"
+                        data-i18n="Check-In/Out">Check-In / Check-Out</a></li>
             </ul>
         </li>
 
@@ -43,9 +47,12 @@
                 <span class="pc-arrow"><i class="ph ph-caret-right"></i></span>
             </a>
             <ul class="pc-submenu">
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Daily Attendance">Daily Attendance</a></li>
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Update Menu">Update Menu</a></li>
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Mess Holidays">Mess Holidays</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.daily-attendance') }}"
+                        data-i18n="Daily Attendance">Daily Attendance</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.update-menu') }}"
+                        data-i18n="Update Menu">Update Menu</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.mess-holidays') }}"
+                        data-i18n="Mess Holidays">Mess Holidays</a></li>
             </ul>
         </li>
 
@@ -56,13 +63,18 @@
                 </span>
                 <span class="pc-mtext" data-i18n="Student Approvals">Student Approvals</span>
                 <span class="pc-arrow"><i class="ph ph-caret-right"></i></span>
-                <span class="pc-badge" style="background: #dc3545; color: white; border-radius: 10px; font-size: 9px; padding: 2px 6px;">New</span>
+                <span class="pc-badge"
+                    style="background: #dc3545; color: white; border-radius: 10px; font-size: 9px; padding: 2px 6px;">New</span>
             </a>
             <ul class="pc-submenu">
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Hostel Applications">Hostel Applications</a></li>
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Mess Enrollments">Mess Enrollments</a></li>
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Leave Requests">Leave Requests</a></li>
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Room Changes">Room Changes</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.hostel-applications') }}"
+                        data-i18n="Hostel Applications">Hostel Applications</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.mess-enrollments') }}"
+                        data-i18n="Mess Enrollments">Mess Enrollments</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.leave-requests') }}"
+                        data-i18n="Leave Requests">Leave Requests</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.room-changes') }}"
+                        data-i18n="Room Changes">Room Changes</a></li>
             </ul>
         </li>
 
@@ -75,14 +87,17 @@
                 <span class="pc-arrow"><i class="ph ph-caret-right"></i></span>
             </a>
             <ul class="pc-submenu">
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Verify Payments">Verify Payments</a></li>
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Generate Invoices">Generate Invoices</a></li>
-                <li class="pc-item"><a class="pc-link" href="#!" data-i18n="Apply Fines">Apply Fines</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.verify-payments') }}"
+                        data-i18n="Verify Payments">Verify Payments</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.generate-invoices') }}"
+                        data-i18n="Generate Invoices">Generate Invoices</a></li>
+                <li class="pc-item"><a class="pc-link" href="{{ route('manager.apply-fines') }}"
+                        data-i18n="Apply Fines">Apply Fines</a></li>
             </ul>
         </li>
 
         <li class="pc-item">
-            <a href="#!" class="pc-link">
+            <a href="{{ route('manager.complaints') }}" class="pc-link">
                 <span class="pc-micon">
                     <i class="ph ph-chat-teardrop-text"></i>
                 </span>

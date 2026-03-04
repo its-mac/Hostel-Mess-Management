@@ -68,7 +68,7 @@
             <div class="m-header">
                 <a href="../dashboard/index.html" class="b-brand text-primary">
                     <!-- ========   Change your logo from here   ============ -->
-                    <img src="images/logo-white.svg" class="img-fluid logo-lg" alt="logo" />
+                    <img src="{{ asset('assets/images/Logo (2).png') }}" class="img-fluid logo-lg" alt="logo" />
                 </a>
             </div>
             <div class="navbar-content">
